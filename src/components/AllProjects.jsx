@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import { allProjects, categories } from '../data/projects';
 
-const WA_LINK = "https://wa.me/919652020454?text=Hi%20Dreams%20Tech%20Labs%2C%20I%20am%20interested%20in%20your%20project%20solutions.%20Please%20share%20more%20details.";
+const WA_LINK = "https://wa.me/917095537106?text=Hi%20Dreams%20Tech%20Labs%2C%20I%20am%20interested%20in%20your%20project%20solutions.%20Please%20share%20more%20details.";
 
 function ProjectCard({ project, index }) {
   return (
