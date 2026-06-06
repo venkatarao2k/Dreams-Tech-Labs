@@ -1,6 +1,6 @@
 import { featuredProjects } from '../data/projects';
 
-const WA_LINK = "https://wa.me/917095537106?text=Hi%20Dreams%20Tech%20Labs%2C%20I%20am%20interested%20in%20your%20project%20solutions.%20Please%20share%20more%20details.";
+const WA_LINK = "https://wa.me/917095537106?text=%F0%9F%91%8B%20Hi%20Dreams%20Tech%20Labs!%0A%0AI%20am%20looking%20for%20a%20project.%20Here%20are%20my%20details%3A%0A%0A1%EF%B8%8F%E2%83%A3%20Project%20Type%3A%20%5BFinal%20Year%20%2F%20Resume%20%2F%20Learning%5D%0A2%EF%B8%8F%E2%83%A3%20Language%20I%20prefer%3A%20%5BTelugu%20%2F%20English%20%2F%20Tamil%20%2F%20Hindi%5D%0A3%EF%B8%8F%E2%83%A3%20My%20project%20idea%20or%20requirement%3A%0A%0APlease%20suggest%20the%20best%20project%20for%20me!%20%F0%9F%99%8F";
 
 function FeaturedCard({ project }) {
   return (
