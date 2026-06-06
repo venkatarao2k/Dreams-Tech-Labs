@@ -1,7 +1,8 @@
 import { useState, useMemo } from 'react';
 import { allProjects, categories } from '../data/projects';
 
-const WA_LINK = "https://wa.me/917095537106?text=%F0%9F%91%8B%20Hi%20Dreams%20Tech%20Labs!%0A%0AI%20am%20looking%20for%20a%20project.%20Here%20are%20my%20details%3A%0A%0A1%EF%B8%8F%E2%83%A3%20Project%20Type%3A%20%5BFinal%20Year%20%2F%20Resume%20%2F%20Learning%5D%0A2%EF%B8%8F%E2%83%A3%20Language%20I%20prefer%3A%20%5BTelugu%20%2F%20English%20%2F%20Tamil%20%2F%20Hindi%5D%0A3%EF%B8%8F%E2%83%A3%20My%20project%20idea%20or%20requirement%3A%0A%0APlease%20suggest%20the%20best%20project%20for%20me!%20%F0%9F%99%8F";
+const WA_INQUIRY = "https://wa.me/917095537106?text=Hi+Dreams+Tech+Labs!+I+have+an+inquiry+about+your+projects.+Can+you+help+me%3F";
+const WA_PROJECT = "https://wa.me/917095537106?text=Hi+Dreams+Tech+Labs!%0A%0AI+am+looking+for+a+project.+Here+are+my+details%3A%0A%0AProject+Type%3A+%5BFinal+Year+%2F+Resume+%2F+Learning%5D%0ALanguage+I+prefer%3A+%5BTelugu+%2F+English+%2F+Tamil+%2F+Hindi%5D%0AMy+project+idea+or+requirement%3A%0A%0APlease+suggest+the+best+project+for+me!";
 
 function ProjectCard({ project, index }) {
   return (
@@ -32,7 +33,7 @@ function ProjectCard({ project, index }) {
 
       {/* CTA */}
       <a
-        href={WA_LINK}
+        href={WA_PROJECT}
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center gap-1.5 text-xs font-semibold text-brand-blue hover:text-white transition-colors duration-200 mt-1"

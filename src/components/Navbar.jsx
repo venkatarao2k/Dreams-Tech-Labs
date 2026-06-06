@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const WA_INQUIRY = "https://wa.me/917095537106?text=👋%20Hi%20Dreams%20Tech%20Labs!%20I%20have%20an%20inquiry%20about%20your%20projects.%20Can%20you%20help%20me%3F";
+const WA_INQUIRY = "https://wa.me/917095537106?text=Hi+Dreams+Tech+Labs!+I+have+an+inquiry+about+your+projects.+Can+you+help+me%3F";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
