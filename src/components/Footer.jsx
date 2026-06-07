@@ -28,7 +28,7 @@ export default function Footer() {
                 <span className="text-white font-bold text-sm font-display">DT</span>
               </div>
               <div>
-                <span className="font-display font-bold text-white text-lg leading-none block">Dreams Tech Labs</span>
+                <span className="font-display font-bold text-white text-lg leading-none block">DreamsTech Labs</span>
                 <span className="text-xs text-blue-400 tracking-widest uppercase leading-none font-mono">Innovation Platform</span>
               </div>
             </div>
