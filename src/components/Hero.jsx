@@ -114,7 +114,6 @@ export default function Hero() {
         <div className="flex flex-wrap items-center justify-center gap-3 animate-fade-in animate-delay-400">
           <TrustBadge icon="✓" text="42+ Innovative Projects" />
           <TrustBadge icon="✓" text="Real-World Solutions" />
-          <TrustBadge icon="✓" text="Telugu / English / Tamil / Hindi" />
           <TrustBadge icon="✓" text="Future Ready Concepts" />
         </div>
 
