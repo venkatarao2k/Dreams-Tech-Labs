@@ -134,19 +134,6 @@ export default function Contact() {
           ))}
         </div>
 
-        {/* Language banner */}
-        <div className={`glass rounded-2xl p-5 border border-indigo-500/15 text-center mb-8 reveal ${cardsVisible ? 'visible' : ''}`}
-             style={{ transitionDelay: '300ms' }}>
-          <p className="text-slate-300 text-sm">
-            🌐 We support &nbsp;
-            <span className="text-white font-semibold">తెలుగు</span> &nbsp;·&nbsp;
-            <span className="text-white font-semibold">English</span> &nbsp;·&nbsp;
-            <span className="text-white font-semibold">தமிழ்</span> &nbsp;·&nbsp;
-            <span className="text-white font-semibold">हिंदी</span>
-            &nbsp; — Explain your requirement in any language!
-          </p>
-        </div>
-
         {/* CTA Block */}
         <div ref={ctaRef} className={`glass-strong rounded-3xl p-8 md:p-12 border border-indigo-500/20 text-center relative overflow-hidden reveal ${ctaVisible ? 'visible' : ''}`}>
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent" />
