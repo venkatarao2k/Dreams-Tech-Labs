@@ -1,33 +1,29 @@
-import { useState } from 'react';
-import Header from './components/Header';
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Catalog from './components/Catalog';
-import { About, Footer, OwnIdea, Process, WhatsAppFab } from './components/Sections';
+import FeaturedProjects from './components/FeaturedProjects';
+import AllProjects from './components/AllProjects';
+import WhyChooseUs from './components/WhyChooseUs';
+import HowItWorks from './components/HowItWorks';
+import About from './components/About';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import WhatsAppFloat from './components/WhatsAppFloat';
 
 export default function App() {
-  const [domain, setDomain] = useState('all');
-  const [level, setLevel] = useState('all');
-
-  const pickDomain = (id, lvl = 'all') => {
-    setDomain(id);
-    setLevel(lvl);
-    document.getElementById('projects')?.scrollIntoView();
-  };
-
   return (
-    <>
-      <div className="backdrop" aria-hidden="true" />
-      <a href="#projects" className="sr-only">Skip to projects</a>
-      <Header />
+    <div className="min-h-screen bg-navy-950">
+      <Navbar />
       <main>
-        <Hero onPickDomain={pickDomain} />
-        <Catalog domain={domain} setDomain={setDomain} level={level} setLevel={setLevel} />
-        <OwnIdea />
-        <Process />
+        <Hero />
+        <FeaturedProjects />
+        <WhyChooseUs />
+        <AllProjects />
+        <HowItWorks />
         <About />
+        <Contact />
       </main>
       <Footer />
-      <WhatsAppFab />
-    </>
+      <WhatsAppFloat />
+    </div>
   );
 }
