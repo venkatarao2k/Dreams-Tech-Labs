@@ -5,17 +5,19 @@ export function OwnIdea() {
   return (
     <section className="own-idea" id="own-idea" aria-labelledby="own-idea-title">
       <div className="wrap">
+        <div className="own-idea-card glass">
         <div>
           <h2 className="h2" id="own-idea-title">Have your own idea or a base paper?</h2>
           <p>
             Not every project is on this list. Send us your idea, an IEEE paper you need to implement,
-            or the topic your guide gave you. We will tell you if we can build it and how long it takes.
+            or a topic you have been given. We will tell you if we can build it and how long it takes.
           </p>
         </div>
         <a className="btn" href={WA_OWN_IDEA} target="_blank" rel="noopener noreferrer">
           <WhatsAppIcon />
           Send your idea
         </a>
+        </div>
       </div>
     </section>
   );
@@ -28,7 +30,7 @@ const steps = [
   },
   {
     title: 'Message us on WhatsApp',
-    text: 'Send the code with your course, branch and submission date. Tell us which language you want the explanation in.',
+    text: 'Send the code with your course, branch and deadline. Tell us which language you want the explanation in.',
   },
   {
     title: 'Get the details',
@@ -36,7 +38,7 @@ const steps = [
   },
   {
     title: 'Build and understand it',
-    text: 'We walk you through the code and the flow so you can explain it to your guide and in your viva.',
+    text: 'We walk you through the code and the flow so you can explain every part of it with confidence.',
   },
 ];
 
@@ -48,7 +50,7 @@ export function Process() {
         <p className="lede">Everything happens on WhatsApp. No forms, no sign-up.</p>
         <ol className="steps">
           {steps.map((s) => (
-            <li key={s.title}>
+            <li key={s.title} className="glass">
               <h3>{s.title}</h3>
               <p>{s.text}</p>
             </li>
@@ -67,8 +69,8 @@ export function About() {
         <div className="about-text">
           <h2 className="h2" id="about-title">About DreamsTech Labs</h2>
           <p>
-            We help engineering students choose and finish their final-year project, and understand it
-            well enough to present it with confidence.
+            We help engineering students choose, build and understand their projects, well enough to
+            present them with confidence.
           </p>
           <p>
             You talk to the people who build the projects, not a call centre. Write to us in Telugu,
@@ -76,7 +78,7 @@ export function About() {
           </p>
         </div>
 
-        <div>
+        <div className="contact-card glass">
           <dl className="contact-list">
             <div>
               <dt>WhatsApp</dt>

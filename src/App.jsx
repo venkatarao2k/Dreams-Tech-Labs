@@ -16,6 +16,7 @@ export default function App() {
 
   return (
     <>
+      <div className="backdrop" aria-hidden="true" />
       <a href="#projects" className="sr-only">Skip to projects</a>
       <Header />
       <main>

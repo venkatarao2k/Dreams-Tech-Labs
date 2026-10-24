@@ -6,7 +6,7 @@ export const waLink = (text) =>
   `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
 
 export const WA_GENERAL = waLink(
-  'Hi DreamsTech Labs, I need help choosing a final-year project.\n\nCourse: (B.Tech / MCA / M.Tech)\nBranch:\nTechnology I prefer:\nPreferred language: (Telugu / English / Tamil / Hindi)'
+  'Hi DreamsTech Labs, I need help choosing a project.\n\nCourse: (B.Tech / MCA / M.Tech)\nBranch:\nTechnology I prefer:\nPreferred language: (Telugu / English / Tamil / Hindi)'
 );
 
 export const WA_OWN_IDEA = waLink(

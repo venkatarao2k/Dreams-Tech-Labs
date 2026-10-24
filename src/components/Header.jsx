@@ -15,6 +15,7 @@ export default function Header() {
   return (
     <header className={`site-header${scrolled ? ' is-scrolled' : ''}`}>
       <div className="wrap">
+        <div className="header-bar glass">
         <a href="#top" className="wordmark" aria-label="DreamsTech Labs, back to top">
           <b>DreamsTech</b>
           <span>Labs</span>
@@ -31,6 +32,7 @@ export default function Header() {
           <WhatsAppIcon />
           Chat on WhatsApp
         </a>
+        </div>
       </div>
     </header>
   );

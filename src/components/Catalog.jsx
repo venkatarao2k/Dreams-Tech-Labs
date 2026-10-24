@@ -131,7 +131,7 @@ export default function Catalog({ domain, setDomain, level, setLevel }) {
           <p className="lede">Open any project to see what it does and what it is built with.</p>
         </div>
 
-        <div className="toolbar">
+        <div className="toolbar glass">
           <div className="search">
             <label htmlFor="project-search" className="sr-only">Search projects</label>
             <SearchIcon />
@@ -178,6 +178,7 @@ export default function Catalog({ domain, setDomain, level, setLevel }) {
           </div>
         </div>
 
+        <div className="list-panel glass">
         <div className="result-line" aria-live="polite">
           <span>
             {filtered
@@ -220,6 +221,7 @@ export default function Catalog({ domain, setDomain, level, setLevel }) {
             </div>
           </div>
         )}
+        </div>
       </div>
     </section>
   );

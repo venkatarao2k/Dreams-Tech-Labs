@@ -1,6 +1,6 @@
 # DreamsTech Labs
 
-Website for [DreamsTech Labs](https://dreamstechlabs.in): a searchable catalog of final-year projects for B.Tech, MCA and M.Tech students.
+Website for [DreamsTech Labs](https://dreamstechlabs.in): a searchable catalog of engineering projects for B.Tech, MCA and M.Tech students.
 
 Built with React, Vite and a single stylesheet (`src/index.css`). Deployed to GitHub Pages on every push to `main`.
 

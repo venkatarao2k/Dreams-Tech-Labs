@@ -10,7 +10,7 @@ export default function Hero({ onPickDomain }) {
     <section className="hero" id="top">
       <div className="wrap hero-grid">
         <div>
-          <h1 className="display">Final-year projects you can run, understand and defend in your viva.</h1>
+          <h1 className="display">Engineering projects you can run, understand and explain.</h1>
           <p className="lede">
             {projectCount} projects for B.Tech, MCA and M.Tech students, from web apps to machine
             learning and IoT. Pick one and ask us about it on WhatsApp. We explain in Telugu, English,
@@ -27,7 +27,7 @@ export default function Hero({ onPickDomain }) {
           </div>
         </div>
 
-        <nav className="areas" aria-label="Browse by area">
+        <nav className="areas glass" aria-label="Browse by area">
           <h2>Browse by area</h2>
           <ul>
             {domains.map((d) => (
