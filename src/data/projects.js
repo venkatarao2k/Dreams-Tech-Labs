@@ -1,396 +1,333 @@
-export const allProjects = [
-  {
-    id: 1,
-    name: "Employee Management System",
-    category: "HR & Operations",
-    icon: "👥",
-    color: "from-blue-500 to-cyan-500",
-    description: "A centralized platform that streamlines every aspect of workforce management — from onboarding and attendance to payroll and performance reviews. Organizations often struggle with scattered HR data, manual processes, and delayed reporting. This system brings everything under one roof, empowering HR teams to manage employee records, track leaves, generate payslips, and monitor performance in real time."
-  },
-  {
-    id: 2,
-    name: "Smart Attendance System",
-    category: "Education & HR",
-    icon: "📋",
-    color: "from-indigo-500 to-purple-500",
-    description: "Traditional attendance marking is time-consuming, error-prone, and easy to manipulate. This Smart Attendance System replaces outdated methods with an intelligent, automated approach that captures presence accurately and efficiently — providing real-time data, insightful reports, and absenteeism alerts."
-  },
-  {
-    id: 3,
-    name: "Hospital Management System",
-    category: "Healthcare",
-    icon: "🏥",
-    color: "from-red-500 to-rose-500",
-    description: "Managing a hospital involves coordinating patients, doctors, appointments, lab results, billing, and inventory simultaneously. This Hospital Management System provides a unified digital backbone that keeps every department in sync, reduces patient wait times, and improves care quality."
-  },
-  {
-    id: 4,
-    name: "Online Examination Portal",
-    category: "Education",
-    icon: "📝",
-    color: "from-amber-500 to-orange-500",
-    description: "Conducting fair, scalable, and efficient examinations is a challenge for institutions of all sizes. This portal eliminates geographical barriers with fully digital assessments — question banks, anti-cheating mechanisms, timer controls, and instant result generation."
-  },
-  {
-    id: 5,
-    name: "Inventory Management System",
-    category: "Operations & Retail",
-    icon: "📦",
-    color: "from-green-500 to-emerald-500",
-    description: "Stock shortages and untracked assets cost businesses significant time and money. This system gives organizations complete visibility over their stock — from procurement to delivery — with real-time tracking, low-stock alerts, and automated purchase reports."
-  },
-  {
-    id: 6,
-    name: "Student Performance Tracker",
-    category: "Education",
-    icon: "📊",
-    color: "from-violet-500 to-indigo-500",
-    description: "This tracker offers educators and parents a continuous, data-driven view of academic progress. It logs assessment results, tracks subject-wise trends, flags struggling students, and transforms raw marks into actionable insights that improve teaching strategies."
-  },
-  {
-    id: 7,
-    name: "Ticket Management Portal",
-    category: "IT & Support",
-    icon: "🎫",
-    color: "from-cyan-500 to-blue-500",
-    description: "When technical issues go untracked, resolution times spiral and satisfaction drops. This portal logs every request, assigns it to the right team, and tracks it through to resolution with automated escalation and reporting dashboards."
-  },
-  {
-    id: 8,
-    name: "Smart Library Management System",
-    category: "Education",
-    icon: "📚",
-    color: "from-purple-500 to-violet-500",
-    description: "This system digitizes the entire library lifecycle — from cataloging and member registration to book issuance, returns, and fine calculation. Users search the catalog online, check real-time availability, and receive due-date reminders."
-  },
-  {
-    id: 9,
-    name: "Vehicle Parking Management System",
-    category: "Smart Infrastructure",
-    icon: "🚗",
-    color: "from-slate-500 to-zinc-500",
-    description: "This system digitizes space allocation, entry-exit tracking, and payment processing for parking lots. Operators monitor occupancy in real time and automate billing, while users know exactly where to go and pay only for time used."
-  },
-  {
-    id: 10,
-    name: "Event Management & Booking System",
-    category: "Events & Hospitality",
-    icon: "🎪",
-    color: "from-pink-500 to-rose-500",
-    description: "Organizers can create events, manage registrations, process ticket bookings, and send automated reminders. Real-time analytics show registration trends and revenue, while guest list management ensures smooth on-ground execution."
-  },
-  {
-    id: 11,
-    name: "Complaint Management System",
-    category: "Governance & Service",
-    icon: "📣",
-    color: "from-orange-500 to-amber-500",
-    description: "This system creates a structured channel for lodging, tracking, and resolving issues transparently. Citizens or customers file complaints, monitor status, and receive updates — while administrators track resolution times and ensure accountability."
-  },
-  {
-    id: 12,
-    name: "Blood Bank Management System",
-    category: "Healthcare",
-    icon: "🩸",
-    color: "from-red-600 to-red-400",
-    description: "This system ensures hospitals and blood banks have real-time visibility into stock levels, blood group inventory, and donor records. Medical staff can search availability across facilities, schedule donation drives, and track expiry dates to reduce wastage."
-  },
-  {
-    id: 13,
-    name: "Resume Preparation System",
-    category: "Career & Professional",
-    icon: "📄",
-    color: "from-teal-500 to-cyan-500",
-    description: "This system guides users through building professional, visually impressive resumes that stand out. Users input education, experience, skills, and achievements — and the system generates clean, formatted resumes ready for download with industry-specific templates."
-  },
-  {
-    id: 14,
-    name: "AI Chat Assistant",
-    category: "Artificial Intelligence",
-    icon: "🤖",
-    color: "from-blue-500 to-violet-500",
-    description: "This AI Chat Assistant delivers conversational support that understands context, responds naturally, and resolves queries efficiently. It learns from interactions, improves over time, and provides 24/7 availability that transforms user experience."
-  },
-  {
-    id: 15,
-    name: "Job Portal System",
-    category: "Career & Employment",
-    icon: "💼",
-    color: "from-emerald-500 to-teal-500",
-    description: "This portal creates a seamless bridge between job seekers and employers — smart searches, detailed profile creation, direct application workflows, recruiter dashboards, and personalized recommendations that accelerate talent placement."
-  },
-  {
-    id: 16,
-    name: "Finance Tracker",
-    category: "Personal Finance",
-    icon: "💰",
-    color: "from-yellow-500 to-amber-500",
-    description: "This tracker enables users to log income and expenses, categorize transactions, set budgets, and visualize spending patterns. It highlights overspending areas, helps build savings goals, and transforms financial anxiety into data-backed control."
-  },
-  {
-    id: 17,
-    name: "E-Commerce Platform",
-    category: "Retail & Commerce",
-    icon: "🛒",
-    color: "from-orange-500 to-red-500",
-    description: "This platform provides sellers with product catalog management, inventory tracking, secure order processing, and customer communication tools — while buyers enjoy intuitive browsing, smooth checkout, and order tracking."
-  },
-  {
-    id: 18,
-    name: "Women Safety Travel Assistance",
-    category: "Safety & Social Impact",
-    icon: "🛡️",
-    color: "from-pink-600 to-purple-600",
-    description: "This system empowers women with real-time safety alerts, trusted contact sharing, and emergency response features. Users share live location, receive route safety ratings, and trigger discreet SOS alerts — backed by community-reported safety data."
-  },
-  {
-    id: 19,
-    name: "Online Learning Platform",
-    category: "Education & E-Learning",
-    icon: "🎓",
-    color: "from-indigo-500 to-blue-500",
-    description: "This platform enables instructors to publish courses, learners to progress at their own pace, and institutions to measure impact at scale — with video lessons, quizzes, progress tracking, and completion certificates."
-  },
-  {
-    id: 20,
-    name: "Career Guidance Portal",
-    category: "Career & Education",
-    icon: "🧭",
-    color: "from-sky-500 to-indigo-500",
-    description: "This portal provides structured assessments, expert advice, and curated learning resources to help individuals discover careers aligned with their strengths — mapping educational pathways, highlighting industry trends, and connecting users with mentors."
-  },
-  {
-    id: 21,
-    name: "Hostel Management System",
-    category: "Education & Housing",
-    icon: "🏠",
-    color: "from-lime-500 to-green-500",
-    description: "Administrators track occupancy, process payments, handle maintenance complaints, and generate reports with ease. Residents benefit from transparent communication, digital receipts, and responsive management."
-  },
-  {
-    id: 22,
-    name: "Disaster Alert & Notification System",
-    category: "Safety & Public Service",
-    icon: "🚨",
-    color: "from-red-500 to-orange-600",
-    description: "This system enables authorities to broadcast real-time alerts across multiple channels — with geofenced notifications, multi-language support, and escalation workflows that route critical information to the right responders."
-  },
-  {
-    id: 23,
-    name: "Smart Expense Tracker",
-    category: "Personal Finance",
-    icon: "💳",
-    color: "from-violet-500 to-purple-600",
-    description: "This tracker helps users record every transaction, assign budget categories, and see real-time spending alignment. Visual breakdowns, monthly comparisons, and trend detection reveal habits over time and enable smarter financial decisions."
-  },
-  {
-    id: 24,
-    name: "Fitness & Health Tracking Platform",
-    category: "Health & Wellness",
-    icon: "🏋️",
-    color: "from-emerald-400 to-teal-600",
-    description: "Users log workouts, track nutrition, monitor vital health metrics, and set progressive wellness goals. Personalized dashboards, streak tracking, and coach tools help build habits that genuinely transform physical and mental well-being."
-  },
-  {
-    id: 25,
-    name: "Local Service Booking Platform",
-    category: "Services & Commerce",
-    icon: "🔧",
-    color: "from-blue-400 to-sky-600",
-    description: "This platform connects skilled local service providers — plumbers, electricians, tutors — with nearby customers through a transparent interface with verified ratings, pricing comparison, and seamless appointment booking."
-  },
-  {
-    id: 26,
-    name: "Smart Donation & Charity Platform",
-    category: "Social Impact & NGO",
-    icon: "❤️",
-    color: "from-rose-500 to-pink-600",
-    description: "NGOs create campaign pages, showcase outcomes, and communicate directly with supporters. Donors get transparent fund tracking and impact reports. By building trust through transparency, this platform amplifies every donation made."
-  },
-  {
-    id: 27,
-    name: "Travel Planning & Budget System",
-    category: "Travel & Lifestyle",
-    icon: "✈️",
-    color: "from-sky-500 to-blue-600",
-    description: "Users design detailed itineraries, estimate costs, and track spending throughout their journey — with day-by-day activity planning, booking logs, and real-time budget alerts that turn great trips into extraordinary ones."
-  },
-  {
-    id: 28,
-    name: "Personal Productivity Assistant",
-    category: "Productivity & Lifestyle",
-    icon: "⚡",
-    color: "from-amber-400 to-yellow-600",
-    description: "This assistant helps users organize tasks, manage goals, track habits, and prioritize their day through an adaptive interface — synthesizing to-do lists, calendar events, and progress data into a coherent daily action plan."
-  },
-  {
-    id: 29,
-    name: "Smart Recommendation System",
-    category: "Artificial Intelligence",
-    icon: "🎯",
-    color: "from-indigo-400 to-violet-600",
-    description: "This system analyzes user behavior and preferences to deliver personalized suggestions — for content, products, courses, or services. It learns continuously, growing more precise with every interaction to transform generic experiences into personal ones."
-  },
-  {
-    id: 30,
-    name: "Student Doubt Support Portal",
-    category: "Education",
-    icon: "💡",
-    color: "from-yellow-400 to-orange-500",
-    description: "Learners post questions and receive expert responses in a structured environment with subject-wise categorization and searchable knowledge. Mentors answer questions at scale, reducing the isolation of self-study."
-  },
-  {
-    id: 31,
-    name: "Smart Agriculture System",
-    category: "AgriTech & Innovation",
-    icon: "🌱",
-    color: "from-green-400 to-emerald-600",
-    description: "This system empowers farmers with data-driven insights on soil health, crop selection, irrigation scheduling, and pest management — integrating weather data and agricultural best practices into an accessible digital interface."
-  },
-  {
-    id: 32,
-    name: "Digital Healthcare Assistant",
-    category: "Healthcare & AI",
-    icon: "🩺",
-    color: "from-teal-400 to-cyan-600",
-    description: "This assistant provides intelligent health guidance, symptom assessment, and appointment booking through a conversational interface. Patients track medications, monitor chronic conditions, and receive checkup reminders."
-  },
-  {
-    id: 33,
-    name: "Waste Management System",
-    category: "Environment & Sustainability",
-    icon: "♻️",
-    color: "from-lime-400 to-green-600",
-    description: "This system digitizes collection scheduling, route optimization, segregation tracking, and recycling reporting. Citizens report waste issues and track recycling impact while municipalities gain operational visibility to reduce costs."
-  },
-  {
-    id: 34,
-    name: "Smart Traffic Management System",
-    category: "Smart City",
-    icon: "🚦",
-    color: "from-red-400 to-orange-500",
-    description: "This system monitors vehicle density, dynamically adjusts signal timings, and provides real-time routing guidance. Emergency vehicles get green corridor prioritization while traffic authorities get city-wide dashboards and analytics."
-  },
-  {
-    id: 35,
-    name: "Tourist Guide Platform",
-    category: "Travel & Tourism",
-    icon: "🗺️",
-    color: "from-orange-400 to-amber-600",
-    description: "This platform serves as a knowledgeable travel companion — providing curated destination info, local attractions, cultural insights, and personalized itinerary suggestions with offline-capable maps for confident exploration."
-  },
-  {
-    id: 36,
-    name: "Online Internship Portal",
-    category: "Career & Education",
-    icon: "🧑‍💻",
-    color: "from-blue-500 to-indigo-600",
-    description: "This portal bridges students with companies offering meaningful internship experiences. Companies post openings, screen candidates, and manage workflows — while students discover roles, apply seamlessly, and track outcomes."
-  },
-  {
-    id: 37,
-    name: "Mental Health Support Platform",
-    category: "Health & Wellness",
-    icon: "🧠",
-    color: "from-purple-400 to-violet-600",
-    description: "A safe, private space where individuals access guided self-help resources, mood tracking, and peer support. Users journal thoughts, complete wellness exercises, and connect with counselors when they need human support."
-  },
-  {
-    id: 38,
-    name: "Pet Care Management System",
-    category: "Lifestyle & Services",
-    icon: "🐾",
-    color: "from-yellow-500 to-orange-500",
-    description: "This system centralizes pet health records, vaccination tracking, vet appointment reminders, and diet scheduling. Veterinary clinics manage patient records efficiently while pet boarding facilities simplify bookings and care communication."
-  },
-  {
-    id: 39,
-    name: "Freelance Marketplace Platform",
-    category: "Commerce & Career",
-    icon: "🌐",
-    color: "from-cyan-500 to-teal-600",
-    description: "Freelancers showcase portfolios, bid on projects, and build verifiable reputations. Clients post requirements, review proposals, manage contracts, and release payments securely — with milestone tracking and dispute resolution tools."
-  },
-  {
-    id: 40,
-    name: "Smart Home Automation System",
-    category: "IoT & Smart Tech",
-    icon: "🏡",
-    color: "from-indigo-400 to-blue-600",
-    description: "A centralized control interface for managing lighting, temperature, security, and appliances through one dashboard. Users set automation routines, monitor energy consumption, receive security alerts, and control devices remotely."
-  },
-  {
-    id: 41,
-    name: "NGO Donation Platform",
-    category: "Social Impact & NGO",
-    icon: "🤝",
-    color: "from-rose-400 to-red-600",
-    description: "Non-profits showcase missions, publish campaign updates, and accept donations with full transparency. Donors track how contributions are used, receive impact stories, and build ongoing relationships with causes they believe in."
-  },
-  {
-    id: 42,
-    name: "Campus Placement Portal",
-    category: "Education & Career",
-    icon: "🎯",
-    color: "from-emerald-500 to-green-700",
-    description: "This portal digitizes the entire recruitment cycle — from company registration and job postings to student applications, interview scheduling, and offer tracking — ensuring every student gets a fair shot at their first career opportunity."
-  },
-  // Bonus projects
-  {
-    id: 43,
-    name: "Sign Language Translator",
-    category: "Accessibility & AI",
-    icon: "🤟",
-    color: "from-cyan-500 to-teal-600",
-    description: "Computer vision model trained on regional sign languages that translates gestures to text and speech in real time, bridging communication gaps for the deaf and hearing-impaired community."
-  },
-  {
-    id: 44,
-    name: "Blockchain Certificate Verifier",
-    category: "Blockchain & Education",
-    icon: "🏅",
-    color: "from-violet-500 to-purple-600",
-    description: "Issue, verify, and transfer academic and professional credentials as immutable blockchain records — eliminating fake certificates and enabling instant, tamper-proof verification by employers and institutions."
-  },
-  {
-    id: 45,
-    name: "Fake News Detector",
-    category: "Artificial Intelligence",
-    icon: "🔍",
-    color: "from-red-400 to-pink-600",
-    description: "NLP-based classifier that cross-references news claims against verified fact-check databases with confidence scoring — helping users identify misinformation before sharing it."
-  },
-  {
-    id: 46,
-    name: "Air Quality Monitor Network",
-    category: "Environment & Sustainability",
-    icon: "🌬️",
-    color: "from-sky-400 to-blue-500",
-    description: "Low-cost sensor network producing hyper-local air quality maps updated every few minutes — providing communities, schools, and health organizations with real-time pollution data and alerts."
-  },
-  {
-    id: 47,
-    name: "Decentralized Voting System",
-    category: "Blockchain & Governance",
-    icon: "🗳️",
-    color: "from-indigo-500 to-blue-600",
-    description: "Tamper-proof, anonymous digital voting platform using smart contracts for verifiable election integrity. Eliminates ballot fraud, reduces infrastructure costs, and enables remote participation with cryptographic security."
-  },
-  {
-    id: 48,
-    name: "Cold Chain Monitoring System",
-    category: "IoT & Smart Tech",
-    icon: "❄️",
-    color: "from-blue-300 to-cyan-500",
-    description: "GPS and temperature sensor system ensuring pharmaceutical and perishable products stay within safe temperature ranges during transport — with real-time alerts and compliance documentation for regulators."
-  },
+// Project catalog.
+// level: 'btech' (B.Tech / MCA / diploma) or 'mtech' (M.Tech / research-grade)
+// stack: the default build. Most projects can be done in another stack on request.
+
+export const domains = [
+  { id: 'web', label: 'Web applications', short: 'Web apps' },
+  { id: 'ai', label: 'AI & machine learning', short: 'AI & ML' },
+  { id: 'iot', label: 'IoT & embedded', short: 'IoT' },
+  { id: 'sec', label: 'Security & networks', short: 'Security' },
+  { id: 'cloud', label: 'Cloud & DevOps', short: 'Cloud & DevOps' },
+  { id: 'chain', label: 'Blockchain', short: 'Blockchain' },
 ];
 
-export const featuredProjects = allProjects.filter(p =>
-  [14, 18, 3, 13, 16, 17].includes(p.id)
-);
+export const levels = {
+  btech: 'B.Tech',
+  mtech: 'M.Tech',
+};
 
-export const categories = [
-  "All",
-  ...new Set(allProjects.map(p => p.category))
+const STACK = {
+  mern: ['React', 'Node.js', 'Express', 'MongoDB'],
+  django: ['Python', 'Django', 'MySQL'],
+  spring: ['Java', 'Spring Boot', 'MySQL'],
+  php: ['PHP', 'MySQL', 'Bootstrap'],
+  flutter: ['Flutter', 'Firebase'],
+  mlweb: ['Python', 'scikit-learn', 'Flask'],
+  dl: ['Python', 'TensorFlow', 'Keras', 'Flask'],
+  cv: ['Python', 'OpenCV', 'TensorFlow'],
+  esp: ['ESP32', 'Arduino IDE', 'Firebase'],
+  sol: ['Solidity', 'Ethereum', 'React', 'Web3.js'],
+};
+
+const p = (n, title, domain, level, stack, summary, features) => ({
+  code: `DTL-${String(n).padStart(3, '0')}`,
+  title,
+  domain,
+  level,
+  stack,
+  summary,
+  features,
+});
+
+export const projects = [
+  p(1, 'Employee Management System', 'web', 'btech', STACK.mern,
+    'One place for employee records, leave requests, attendance and payslips.',
+    ['Role-based logins for admin, HR and employees', 'Leave apply and approve flow with balances', 'Monthly payslip generation as PDF']),
+
+  p(2, 'Face Recognition Attendance System', 'ai', 'btech', STACK.cv,
+    'Marks attendance from a webcam by recognising registered faces.',
+    ['Face registration with multiple samples per student', 'Live recognition with time-stamped entries', 'Daily and monthly attendance reports in Excel']),
+
+  p(3, 'Hospital Management System', 'web', 'btech', STACK.spring,
+    'Patient registration, doctor appointments, prescriptions and billing for a small hospital.',
+    ['Appointment booking with doctor availability', 'Patient history and prescription records', 'Billing with printable invoices']),
+
+  p(4, 'Online Examination Portal', 'web', 'btech', STACK.django,
+    'Timed online tests with a question bank and automatic results.',
+    ['Question bank with multiple-choice and true/false', 'Countdown timer and auto-submit', 'Result sheet and rank list per test']),
+
+  p(5, 'Inventory Management System', 'web', 'btech', STACK.php,
+    'Tracks stock, purchases and sales for a shop or warehouse.',
+    ['Low-stock alerts', 'Purchase and sales entries with supplier details', 'Stock and profit reports by date range']),
+
+  p(6, 'Student Performance Prediction', 'ai', 'btech', STACK.mlweb,
+    'Predicts which students are at risk of failing from marks and attendance.',
+    ['Trains and compares Random Forest, SVM and Logistic Regression', 'Dashboard listing at-risk students', 'Upload a CSV and get predictions']),
+
+  p(7, 'IT Helpdesk Ticket System', 'web', 'btech', STACK.mern,
+    'Users raise issues, support staff pick them up and close them.',
+    ['Ticket priority and status workflow', 'Assignment to support staff', 'Email notification on every update']),
+
+  p(8, 'Library Management System', 'web', 'btech', STACK.php,
+    'Book catalogue, issue and return, and automatic fine calculation.',
+    ['Search books by title, author or ISBN', 'Issue, return and renew', 'Fine calculation for late returns']),
+
+  p(9, 'Smart Parking System', 'iot', 'btech', ['ESP32', 'IR sensors', 'Firebase', 'Android'],
+    'Shows free parking slots on a phone using a sensor on each slot.',
+    ['IR sensor per slot sends live status', 'Mobile view of free and occupied slots', 'Slot booking with entry time']),
+
+  p(10, 'Event Management & Booking System', 'web', 'btech', STACK.django,
+    'Create events, sell tickets and check attendees in with a QR code.',
+    ['Event listing with seat limits', 'Ticket booking with QR code', 'QR check-in at the venue']),
+
+  p(11, 'Online Complaint Management System', 'web', 'btech', STACK.php,
+    'Citizens file complaints and track them until they are resolved.',
+    ['Complaint with photo and location', 'Department-wise assignment', 'Status tracking for the complainant']),
+
+  p(12, 'Blood Bank Management System', 'web', 'btech', STACK.mern,
+    'Connects donors, blood banks and hospitals by blood group and city.',
+    ['Donor registration with blood group and city', 'Blood stock per bank', 'Request a blood group and notify matching donors']),
+
+  p(13, 'Resume Builder', 'web', 'btech', ['React', 'Node.js', 'MongoDB', 'jsPDF'],
+    'Fill a form, pick a template and download a resume as PDF.',
+    ['Multiple resume templates', 'Live preview while typing', 'PDF download']),
+
+  p(14, 'AI Chat Assistant', 'ai', 'btech', ['Python', 'Flask', 'Transformers', 'React'],
+    'A chatbot that answers questions in natural language through a web chat window.',
+    ['Intent detection with a fine-tuned model', 'Chat history per user', 'Admin page to add new questions and answers']),
+
+  p(15, 'Job Portal', 'web', 'btech', STACK.spring,
+    'Companies post jobs and candidates apply with their resume.',
+    ['Recruiter and candidate logins', 'Job search with filters', 'Application status tracking']),
+
+  p(16, 'Personal Finance Tracker', 'web', 'btech', STACK.flutter,
+    'Track income, expenses and monthly budgets on your phone.',
+    ['Income and expense entries by category', 'Monthly budget with alerts', 'Charts of spending by category']),
+
+  p(17, 'E-Commerce Website', 'web', 'btech', STACK.mern,
+    'Online store with product catalogue, cart, payments and order tracking.',
+    ['Product search and filters', 'Cart and Razorpay test-mode checkout', 'Order history and admin panel']),
+
+  p(18, 'Women Safety SOS Device', 'iot', 'btech', ['ESP32', 'GPS module', 'GSM module'],
+    'A wearable button that sends live location to emergency contacts.',
+    ['One-press SOS with GPS location by SMS', 'Location updates every 30 seconds', 'Companion app showing the route']),
+
+  p(19, 'Online Learning Platform', 'web', 'btech', STACK.django,
+    'Courses with video lessons, quizzes and progress tracking.',
+    ['Instructor and student roles', 'Video lessons with quizzes', 'Progress bar and completion certificate']),
+
+  p(20, 'Career Recommendation System', 'ai', 'btech', STACK.mlweb,
+    'Suggests career paths from a student\'s skills, interests and marks.',
+    ['Questionnaire for interests and skills', 'Classification model for career fit', 'Top three suggestions with reasons']),
+
+  p(21, 'Hostel Management System', 'web', 'btech', STACK.php,
+    'Room allotment, fee payments and complaints for a college hostel.',
+    ['Room allotment and vacancy view', 'Fee records and due alerts', 'Mess and maintenance complaints']),
+
+  p(22, 'Disaster Alert & Notification System', 'web', 'btech', ['Python', 'Flask', 'Twilio', 'Leaflet'],
+    'Sends SMS and web alerts to people in an affected area.',
+    ['Admin marks an affected area on a map', 'SMS alerts to registered users in that area', 'Public page with shelters and helplines']),
+
+  p(23, 'Smart Expense Categoriser', 'ai', 'btech', STACK.mlweb,
+    'Reads bank SMS messages and sorts expenses into categories automatically.',
+    ['Extracts amount and merchant from SMS text', 'NLP classifier for categories', 'Monthly spending summary']),
+
+  p(24, 'Fitness Tracking App', 'web', 'btech', STACK.flutter,
+    'Log workouts, water and sleep and see weekly progress.',
+    ['Workout and step logs', 'Daily goals with reminders', 'Weekly progress charts']),
+
+  p(25, 'Local Service Booking Platform', 'web', 'btech', STACK.mern,
+    'Book electricians, plumbers and other local workers near you.',
+    ['Worker profiles with services and rates', 'Booking with time slot', 'Ratings after the job']),
+
+  p(26, 'Online Donation Platform', 'web', 'btech', STACK.django,
+    'Lets NGOs run fundraising campaigns and donors give online.',
+    ['Campaign pages with target and progress', 'Online donation with receipt', 'Donor history']),
+
+  p(27, 'Travel Planner & Budget App', 'web', 'btech', STACK.mern,
+    'Plan a trip day by day and track spending against a budget.',
+    ['Day-wise itinerary builder', 'Budget with shared expenses', 'Map of planned places']),
+
+  p(28, 'Personal Productivity App', 'web', 'btech', STACK.mern,
+    'Tasks, notes and a calendar in one app.',
+    ['Tasks with due dates and priorities', 'Notes with tags', 'Calendar view with reminders']),
+
+  p(29, 'Movie Recommendation System', 'ai', 'btech', STACK.mlweb,
+    'Recommends movies using collaborative and content-based filtering.',
+    ['Trained on the MovieLens dataset', 'Compares two recommendation methods', 'Web page to rate movies and get suggestions']),
+
+  p(30, 'Student Doubt Forum', 'web', 'btech', STACK.django,
+    'Students post doubts and faculty or classmates answer them.',
+    ['Questions by subject with tags', 'Upvotes and accepted answers', 'Faculty-verified answers']),
+
+  p(31, 'Smart Agriculture Monitoring', 'iot', 'btech', ['ESP32', 'Soil moisture sensor', 'DHT11', 'Firebase'],
+    'Monitors soil moisture and weather and switches the water pump automatically.',
+    ['Live soil, temperature and humidity readings', 'Automatic pump control with relay', 'Mobile dashboard and alerts']),
+
+  p(32, 'Disease Prediction from Symptoms', 'ai', 'btech', STACK.mlweb,
+    'Predicts a likely disease from the symptoms a user selects.',
+    ['Trained on a public symptoms dataset', 'Decision Tree, Naive Bayes and Random Forest compared', 'Suggests the type of doctor to consult']),
+
+  p(33, 'Smart Waste Bin Monitoring', 'iot', 'btech', ['ESP32', 'Ultrasonic sensor', 'ThingSpeak'],
+    'Bins report how full they are so collection can be planned.',
+    ['Fill level from an ultrasonic sensor', 'Alert when a bin is 80% full', 'Map of bins for the collection team']),
+
+  p(34, 'Adaptive Traffic Signal Control', 'ai', 'mtech', ['Python', 'YOLOv8', 'OpenCV', 'SUMO'],
+    'Counts vehicles at a junction from video and adjusts green time per lane.',
+    ['Vehicle detection and counting with YOLO', 'Signal timing based on lane density', 'Simulation comparison with fixed timing in SUMO']),
+
+  p(35, 'Tourist Guide Website', 'web', 'btech', STACK.php,
+    'Places to visit, hotels and local guides for a city or state.',
+    ['Places with photos and maps', 'Guide booking', 'Reviews from visitors']),
+
+  p(36, 'Internship Portal', 'web', 'btech', STACK.spring,
+    'Companies list internships and students apply and track status.',
+    ['Company and student logins', 'Internship search by skill and stipend', 'Certificate upload on completion']),
+
+  p(37, 'Mood Tracker with Sentiment Analysis', 'ai', 'btech', ['Python', 'NLTK', 'Flask', 'Chart.js'],
+    'A daily journal that detects mood from what you write and charts it over time.',
+    ['Sentiment analysis on journal entries', 'Mood trend charts', 'Self-help resources by mood']),
+
+  p(38, 'Pet Care Management App', 'web', 'btech', STACK.flutter,
+    'Vaccination reminders, vet appointments and records for pets.',
+    ['Pet profiles with vaccination history', 'Reminders for vaccines and medicines', 'Vet appointment booking']),
+
+  p(39, 'Freelance Marketplace', 'web', 'btech', STACK.mern,
+    'Clients post work, freelancers bid and payments are released on delivery.',
+    ['Project posting and bidding', 'Chat between client and freelancer', 'Milestone-based payment flow']),
+
+  p(40, 'Smart Home Automation', 'iot', 'btech', ['ESP32', 'Relay module', 'Blynk'],
+    'Control lights and fans from a phone and by voice.',
+    ['Mobile control of four appliances', 'Voice control through Google Assistant', 'Schedules and energy usage log']),
+
+  p(41, 'Transparent NGO Donations on Blockchain', 'chain', 'btech', STACK.sol,
+    'Every donation and every spend is recorded on-chain so donors can see where money went.',
+    ['Smart contract for donations and withdrawals', 'Public ledger page for each campaign', 'MetaMask wallet integration']),
+
+  p(42, 'Campus Placement Portal', 'web', 'btech', STACK.django,
+    'Manages company drives, student eligibility and interview rounds.',
+    ['Eligibility filter by CGPA and backlogs', 'Drive registration and round results', 'Placement statistics for the TPO']),
+
+  p(43, 'Sign Language to Text & Speech', 'ai', 'mtech', ['Python', 'MediaPipe', 'TensorFlow', 'OpenCV'],
+    'Recognises hand signs from a webcam and converts them to text and speech.',
+    ['Hand landmark extraction with MediaPipe', 'LSTM model for gesture sequences', 'Text-to-speech output']),
+
+  p(44, 'Blockchain Certificate Verification', 'chain', 'btech', [...STACK.sol, 'IPFS'],
+    'Colleges issue certificates on-chain and employers verify them with a QR code.',
+    ['Certificate hash stored on Ethereum', 'Files stored on IPFS', 'QR code verification page']),
+
+  p(45, 'Fake News Detection', 'ai', 'btech', ['Python', 'scikit-learn', 'TF-IDF', 'Flask'],
+    'Classifies a news article as real or fake from its text.',
+    ['TF-IDF features with Passive Aggressive and LSTM models', 'Accuracy and confusion matrix comparison', 'Web page to paste and check an article']),
+
+  p(46, 'Air Quality Monitoring Network', 'iot', 'btech', ['ESP32', 'MQ135', 'PM2.5 sensor', 'ThingSpeak'],
+    'Low-cost sensor nodes that measure air quality and show it on a map.',
+    ['PM2.5 and gas readings every minute', 'AQI calculation', 'Map of nodes with colour-coded AQI']),
+
+  p(47, 'Decentralized Voting System', 'chain', 'btech', STACK.sol,
+    'Election voting with a smart contract so votes cannot be changed or counted twice.',
+    ['Voter registration by admin', 'One vote per wallet enforced on-chain', 'Live result count']),
+
+  p(48, 'Cold Chain Temperature Monitoring', 'iot', 'btech', ['ESP32', 'DS18B20', 'GPS', 'Firebase'],
+    'Tracks temperature and location of medicine or food during transport.',
+    ['Temperature and GPS logging', 'SMS alert when temperature goes out of range', 'Trip report for each shipment']),
+
+  // Added October 2026
+  p(49, 'DDoS Attack Detection in SD-WAN', 'sec', 'mtech', ['Python', 'Mininet', 'Ryu controller', 'scikit-learn'],
+    'Detects DDoS traffic in a software-defined WAN using flow statistics and machine learning.',
+    ['SD-WAN topology simulated in Mininet with a Ryu controller', 'Flow features collected from the controller', 'Random Forest, SVM and KNN compared, with automatic flow blocking']),
+
+  p(50, 'Network Intrusion Detection with Deep Learning', 'sec', 'mtech', ['Python', 'TensorFlow', 'CIC-IDS2017'],
+    'Classifies network traffic as normal or one of several attack types.',
+    ['Trained on the CIC-IDS2017 dataset', 'CNN-LSTM model compared with classical ML', 'Precision, recall and F1 per attack class']),
+
+  p(51, 'Phishing Website Detection', 'sec', 'btech', ['Python', 'XGBoost', 'Flask', 'Chrome extension'],
+    'Checks a URL and warns if it looks like a phishing site.',
+    ['URL and page features extracted automatically', 'XGBoost classifier', 'Browser extension that flags pages']),
+
+  p(52, 'Server Monitoring with Prometheus & Grafana', 'cloud', 'btech', ['Linux', 'Prometheus', 'Grafana', 'Node Exporter', 'Docker'],
+    'Collects CPU, memory, disk and uptime metrics from servers and alerts on problems.',
+    ['Exporters on multiple Linux machines', 'Grafana dashboards per server', 'Alerts to email or Telegram']),
+
+  p(53, 'Log Anomaly Detection with LSTM', 'cloud', 'mtech', ['Python', 'PyTorch', 'ELK Stack'],
+    'Learns normal patterns in system logs and flags unusual sequences.',
+    ['Log parsing into event templates', 'LSTM model trained on the HDFS log dataset', 'Kibana view of flagged anomalies']),
+
+  p(54, 'Predictive Autoscaling on Kubernetes', 'cloud', 'mtech', ['Kubernetes', 'Python', 'Prophet', 'Prometheus'],
+    'Forecasts incoming load and scales pods before traffic arrives instead of after.',
+    ['Load forecasting from Prometheus metrics', 'Custom scaler that adjusts replica count', 'Comparison with the default Horizontal Pod Autoscaler']),
+
+  p(55, 'CI/CD Pipeline for a Microservices App', 'cloud', 'btech', ['GitHub Actions', 'Docker', 'Kubernetes', 'Node.js'],
+    'Every code push is tested, built into a container and deployed automatically.',
+    ['Three sample microservices', 'Automated test, build and push to a registry', 'Rolling deployment to a Kubernetes cluster']),
+
+  p(56, 'Plant Disease Detection from Leaf Images', 'ai', 'btech', STACK.dl,
+    'Upload a leaf photo and get the disease name and suggested treatment.',
+    ['Trained on the PlantVillage dataset', 'Transfer learning with MobileNetV2', 'Treatment suggestions per disease']),
+
+  p(57, 'Driver Drowsiness Detection', 'ai', 'btech', ['Python', 'OpenCV', 'dlib'],
+    'Watches the driver\'s eyes through a camera and sounds an alarm if they start falling asleep.',
+    ['Eye aspect ratio from facial landmarks', 'Yawn detection', 'Audio alarm after a set number of frames']),
+
+  p(58, 'Brain Tumor Classification from MRI', 'ai', 'mtech', ['Python', 'TensorFlow', 'EfficientNet', 'Grad-CAM'],
+    'Classifies MRI scans into tumor types and highlights the region the model used.',
+    ['Four-class classification on a public MRI dataset', 'Transfer learning with EfficientNet', 'Grad-CAM heatmaps for explainability']),
+
+  p(59, 'Credit Card Fraud Detection', 'ai', 'btech', STACK.mlweb,
+    'Flags fraudulent transactions in a highly imbalanced dataset.',
+    ['SMOTE for class imbalance', 'Logistic Regression, Random Forest and XGBoost compared', 'Precision-recall analysis']),
+
+  p(60, 'Resume Screening with NLP', 'ai', 'btech', ['Python', 'spaCy', 'Flask'],
+    'Ranks uploaded resumes against a job description.',
+    ['Skill extraction from PDF resumes', 'Similarity scoring against the job description', 'Ranked shortlist for the recruiter']),
+
+  p(61, 'College Document Q&A Chatbot (RAG)', 'ai', 'mtech', ['Python', 'LangChain', 'ChromaDB', 'Streamlit'],
+    'Answers questions from college regulations, syllabus and circulars, with the source page cited.',
+    ['PDF ingestion and chunking', 'Retrieval-augmented generation with an open-source LLM', 'Answers show the document and page they came from']),
+
+  p(62, 'Deepfake Video Detection', 'ai', 'mtech', ['Python', 'PyTorch', 'ResNeXt', 'LSTM'],
+    'Detects whether a face video has been manipulated.',
+    ['Face extraction from video frames', 'ResNeXt features with an LSTM over time', 'Evaluated on the FaceForensics++ and Celeb-DF datasets']),
+
+  p(63, 'Crop Yield Prediction', 'ai', 'btech', STACK.mlweb,
+    'Predicts crop yield from rainfall, temperature, soil and area.',
+    ['Trained on Indian state-level crop data', 'Regression models compared', 'Crop suggestion for a given district and season']),
+
+  p(64, 'Stock Price Prediction with LSTM', 'ai', 'btech', ['Python', 'TensorFlow', 'yfinance', 'Streamlit'],
+    'Forecasts the next days\' closing prices for NSE stocks.',
+    ['Historical data from Yahoo Finance', 'LSTM model with sliding windows', 'Interactive charts of actual and predicted prices']),
+
+  p(65, 'Malware Classification using Image Representation', 'sec', 'mtech', ['Python', 'TensorFlow', 'Malimg dataset'],
+    'Converts malware binaries into grayscale images and classifies the malware family with a CNN.',
+    ['Binary-to-image conversion', 'CNN trained on the Malimg dataset', 'Family-wise accuracy and confusion matrix']),
+
+  p(66, 'Secure Cloud File Sharing with Attribute-Based Encryption', 'sec', 'mtech', ['Java', 'Spring Boot', 'CP-ABE', 'AWS S3'],
+    'Files are encrypted so only users with the right attributes, such as department and role, can open them.',
+    ['Ciphertext-policy attribute-based encryption', 'Encrypted storage on AWS S3', 'Attribute revocation for users who leave']),
+
+  p(67, 'IoT Smart Energy Meter', 'iot', 'btech', ['ESP32', 'PZEM-004T', 'Firebase', 'Flutter'],
+    'Measures household power use and shows the units and estimated bill on a phone.',
+    ['Voltage, current and units consumed', 'Bill estimate by tariff slab', 'Alert when daily usage crosses a limit']),
+
+  p(68, 'Fall Detection for Elderly People', 'iot', 'btech', ['ESP32', 'MPU6050', 'Firebase'],
+    'A wearable that detects a fall and alerts family members.',
+    ['Accelerometer and gyroscope fall detection', 'Cancel button for false alarms', 'Push notification with time and location']),
+
+  p(69, 'Land Records on Blockchain', 'chain', 'mtech', [...STACK.sol, 'IPFS'],
+    'Property ownership and transfers recorded on-chain to prevent forged documents.',
+    ['Registration and transfer through a smart contract', 'Documents stored on IPFS', 'Ownership history for every survey number']),
+
+  p(70, 'Federated Learning for Medical Diagnosis', 'ai', 'mtech', ['Python', 'PyTorch', 'Flower'],
+    'Trains one diagnosis model across several hospitals without sharing patient data.',
+    ['Federated training with the Flower framework', 'Simulated hospitals with uneven data', 'Comparison with centralised training']),
+
+  p(71, 'Traffic Sign Recognition', 'ai', 'btech', ['Python', 'TensorFlow', 'OpenCV'],
+    'Recognises road signs from a camera feed in real time.',
+    ['CNN trained on the GTSRB dataset (43 classes)', 'Live detection from webcam', 'Voice announcement of the detected sign']),
+
+  p(72, 'Vehicle Accident Detection & Alert', 'iot', 'btech', ['Arduino', 'Accelerometer', 'GPS', 'GSM'],
+    'Detects a crash and sends the location to emergency contacts and the nearest hospital.',
+    ['Impact detection from sudden acceleration change', 'SMS with Google Maps link', '10-second cancel window for false alarms']),
 ];
+
+export const projectCount = projects.length;
